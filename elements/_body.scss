@@ -1,0 +1,24 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  position: relative;
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  // background: yellow;
+  width: 100vw;
+  height: 200vh;
+  gap: 0px;
+  font-family: "Blinker", sans-serif;
+  position: relative;
+}
+@media (max-width: 768px) {
+  body {
+    height: 300vh;
+  }
+}

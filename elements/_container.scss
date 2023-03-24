@@ -1,0 +1,137 @@
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 3rem;
+  .comun {
+    border-radius: 15px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+      rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  }
+
+  a {
+    font-size: 35px;
+    text-decoration: none;
+    font-weight: bolder;
+    color: antiquewhite;
+  }
+  .sec-container1 {
+    width: 40%;
+    height: 80%;
+    background: linear-gradient(
+        65deg,
+        rgba(0, 0, 0, 0.243),
+        rgba(255, 255, 255, 0)
+      ),
+      url(../IMAGE/wardrope-full.jpg);
+    background-size: cover;
+    display: flex;
+    padding: 30px 30px;
+    align-items: end;
+    justify-content: left;
+  }
+  .sec-container2 {
+    width: 20%;
+    height: 80%;
+    // background-color: aqua;
+    display: flex;
+    align-items: end;
+    justify-content: left;
+  }
+  .sec-cont2-diva {
+    padding: 20px;
+    background: url(../IMAGE/skin-care.jpg);
+    background-size: cover;
+  }
+  .sec-cont2-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    // background-color: black;
+    flex-direction: column;
+    .cont2-div {
+      width: 100%;
+      height: 50%;
+      background-color: azure;
+      display: flex;
+      align-items: end;
+      justify-content: left;
+      padding: 20px;
+    }
+    .diva {
+      background: url(../IMAGE/kitchen.jpg);
+      background-size: cover;
+    }
+    .divb {
+      background: url(../IMAGE/electronic.jpg);
+      background-size: cover;
+    }
+  }
+}
+@media (max-width: 780px) {
+  .container {
+    padding: 10px;
+    a {
+      font-size: 20px;
+
+      text-decoration: none;
+      font-weight: bolder;
+      color: antiquewhite;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    margin-top: 7rem;
+    gap: 20px;
+    flex-wrap: wrap;
+    .sec-cont2-diva {
+      width: 100%;
+      height: 100%;
+      //   background-color: aqua;
+      display: flex;
+      align-items: end;
+      justify-content: left;
+    }
+    .sec-cont2-div {
+      width: 100%;
+      height: 100%;
+      flex-direction: row;
+    }
+    .sec-container2 {
+      .cont2-div {
+        height: 100%;
+      }
+    }
+    .sec-cont2-diva {
+      width: 100%;
+      width: 100%;
+      background: linear-gradient(
+          65deg,
+          rgba(0, 0, 0, 0.219),
+          rgba(255, 255, 255, 0),
+          rgba(255, 255, 255, 0)
+        ),
+        url(../IMAGE/skin-media.jpg);
+      background-size: cover;
+    }
+
+    .sec-container1 {
+      width: 100%;
+      height: 100%;
+      .sec-container2 {
+        height: 100%;
+      }
+    }
+  }
+}
+@media (max-width: 468px) {
+  .container {
+    margin-top: 16rem;
+  }
+}

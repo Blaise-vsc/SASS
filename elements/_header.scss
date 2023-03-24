@@ -1,0 +1,47 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 7px 20px;
+  position: fixed;
+  width: 100%;
+  top: 0%;
+  left: 0%;
+  z-index: 100;
+  background: rgb(241, 241, 241);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  //   logo start
+
+  //  ends logo
+  // bracket start
+  .bracket {
+    width: 45px;
+    height: 45px;
+    object-fit: cover;
+  }
+  // bracket end
+
+  .logo {
+    width: 60px;
+    height: 65px;
+    object-fit: cover;
+  }
+  .bracket {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+  }
+  .header-container-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+}
+@media (max-width: 362px) {
+  header {
+    .logo-container {
+      display: none;
+    }
+  }
+}
